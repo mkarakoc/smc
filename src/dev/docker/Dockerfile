@@ -11,7 +11,6 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 #RUN \
   apt-get update && \
   apt-get install -y software-properties-common texlive texlive-latex-extra tmux flex bison libreadline-dev screen pandoc aspell poppler-utils net-tools wget git python python-pip make g++ sudo haproxy nginx vim bup inetutils-ping lynx telnet git emacs subversion ssh m4 latexmk libpq5 libpq-dev build-essential gfortran automake libssl-dev
-#  apt-get install -y software-properties-common texlive texlive-latex-extra tmux flex bison libreadline-dev screen pandoc aspell poppler-utils net-tools wget git python python-pip make g++ sudo psmisc haproxy nginx vim bup inetutils-ping lynx telnet git emacs subversion ssh m4 latexmk libpq5 libpq-dev build-essential gfortran automake dpkg-dev libssl-dev imagemagick
 
 # Jupyter from pip (since apt-get jupyter is ancient)
 RUN \
