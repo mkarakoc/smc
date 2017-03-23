@@ -7,9 +7,10 @@ USER root
 # So we can source (see http://goo.gl/oBPi5G)
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-RUN echo "nameserver 10.0.128.100" > /etc/resolv.conf
-#COPY resolv.conf /etc/resolv.conf
-RUN more /etc/resolv.conf
+# DNS configuration of the container
+# https://github.com/docker/docker/issues/541#issuecomment-32444639
+# DOCKER_OPTS="-dns 8.8.8.8 -dns 8.8.4.4"
+# sudo service docker restart
 
 # Ubuntu software that are used by SMC (latex, pandoc, sage, jupyter)
 RUN \
