@@ -11,7 +11,7 @@ RUN \
   cd /etc && \
 # sed -i '/s/nameserver 8.8.8.8/nameserver 10.0.128.100/g' resolv.conf &&\
 # sed -i '/s/nameserver 8.8.4.4/#nameserver 8.8.4.4/g' resolv.conf &&\
-  more resolve.conf
+  more resolv.conf
 
 # Ubuntu software that are used by SMC (latex, pandoc, sage, jupyter)
 RUN \
