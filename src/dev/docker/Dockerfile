@@ -1,4 +1,4 @@
-FROM ubuntu:16.04.2
+FROM ubuntu:16.04
 
 MAINTAINER William Stein <wstein@sagemath.com>
 
