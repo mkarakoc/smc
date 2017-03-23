@@ -3,5 +3,5 @@ set -e
 set -v
 git pull
 make build-full 
-docker tag smc_bf:latest hesap/sagemathcloud 
+docker tag smc:latest hesap/sagemathcloud 
 docker push  hesap/sagemathcloud
