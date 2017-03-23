@@ -80,8 +80,20 @@ If you started the container as above, there will be a directory ~/smc on your h
 
 The directory `postgres` contains the database files, so all projects, users, file editing history, etc.  The directory conf contains some secrets and log files.  There will also be one directory (like `be889c14-dc96-4538-989b-4117ffe84148`) for each project that is created.
 
-## Upgrade
+## Creation of a root user (sagemathinc/smc#1304)
 
+In the host machine do the following:
+
+    docker exec -it smc bash
+    useradd -M -G sudo ROOT_USERNAME
+    passwd ROOT_USERNAME
+
+You can open a root shell:
+
+    su ROOT_USERNAME
+    sudo su
+
+## Upgrade
 
 To get the newest image, do this (which will take some time):
 
