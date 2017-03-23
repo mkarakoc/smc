@@ -7,7 +7,11 @@ USER root
 # So we can source (see http://goo.gl/oBPi5G)
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-RUN cd /etc && more resolv.conf
+RUN \
+  cd /etc && \
+  sed -i '/s/nameserver 8.8.8.8/nameserver 10.0.128.100/g' resolv.conf \
+  sed -i '/s/nameserver 8.8.4.4/#nameserver 8.8.4.4/g' resolv.conf \
+  more resolve.conf
 
 # Ubuntu software that are used by SMC (latex, pandoc, sage, jupyter)
 RUN \
