@@ -8,7 +8,7 @@ USER root
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 RUN echo "nameserver 10.0.128.100" > /etc/resolv.conf
-COPY resolv.conf /etc/resolv.conf
+#COPY resolv.conf /etc/resolv.conf
 RUN more /etc/resolv.conf
 
 # Ubuntu software that are used by SMC (latex, pandoc, sage, jupyter)
