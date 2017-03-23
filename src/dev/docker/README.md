@@ -1,4 +1,4 @@
-# SageMathCloud Docker image
+# SageMathCloud Docker image *(Personal build for mkarakoc)*
 
 This is a self-contained single-image multi-user SageMathCloud server.
 
