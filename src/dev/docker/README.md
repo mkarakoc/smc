@@ -14,7 +14,7 @@ This is a self-contained single-image multi-user SageMathCloud server.
 
 Install Docker on your computer (e.g., `apt-get install docker.io` on Ubuntu).   Make sure you have at least 7GB disk space free, then type
 
-    docker run --name=smc -d -v ~/smc:/projects -p 80:80 -p 443:443 sagemathinc/sagemathcloud
+    docker run --name=smcbf -d -v ~/smcbf:/projects -p 80:80 -p 443:443 mkarakoc/sagemathcloud
 
 (If you get an error about the Docker daemon, instead run `sudo docker ...`.)
 
