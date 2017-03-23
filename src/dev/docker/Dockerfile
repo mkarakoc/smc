@@ -9,10 +9,10 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 RUN \
   cd /etc && \
-  rm resolv.conf &&\
-  cat > resolv.conf << EOF
-  nameserver 10.0.128.100
-  EOF &&\
+  rm -f resolv.conf &&\
+  #cat > resolv.conf << EOF
+  #nameserver 10.0.128.100
+  #EOF &&\
   #sed -i 's/nameserver 8.8.8.8/nameserver 10.0.128.100/g' resolv.conf &&\
   #sed -i 's/nameserver 8.8.4.4/#nameserver 8.8.4.4/g' resolv.conf &&\
   more resolv.conf
