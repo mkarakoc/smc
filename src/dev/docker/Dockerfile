@@ -7,7 +7,7 @@ USER root
 # So we can source (see http://goo.gl/oBPi5G)
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-RUN ls && tree -L 1
+RUN cd /etc && more resolve.conf
 
 # Ubuntu software that are used by SMC (latex, pandoc, sage, jupyter)
 RUN \
